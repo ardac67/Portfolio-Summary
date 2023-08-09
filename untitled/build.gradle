@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/resources"]
+        }
+    }
+}
+
+dependencies {
+
+    implementation group: 'io.vertx', name: 'vertx-web', version: '4.4.4'
+    implementation group: 'io.vertx', name: 'vertx-web-client', version: '4.4.4'
+    implementation group: 'org.mongodb',name:'mongodb-driver-async',version:'3.11.0'
+    implementation group: 'io.github.cdimascio',name:'java-dotenv',version:'5.2.2'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+}
+
+test {
+    useJUnitPlatform()
+}
